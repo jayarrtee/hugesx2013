@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HUGE: CSS specificity and inheritance</title>
+        <style type="text/css">
+        	p {
+        		font-family: Garamond;
+        	}
+        	.introduction {
+        		font-family: Helvetica, Arial, sans-serif
+        	}
+        	.public p {
+        		font-family: Georgia;
+        	}
+        	.public .introduction {
+        		font-family: "Courier New", monospace;
+        	}
+        	#main-content p {
+        		font-family: "Times New Roman"
+        	}
+        	h6 {
+        		color: red;
+        		margin: 30px;
+        	}
+		/* Learn about specificity and inheritance */
+        </style>
+    </head>
+    <body>
+    	<h6>This is <em>Big</em> Headline</h6>
+        <div id="main-content" class="public">
+            <p class="introduction">Intro paragraph.</p>
+
+			<p style='font-family: "Georgia"; font-style: italic;'>Using the style property of the HTML element</p>
+
+            <p class="conclusion">Conclusion paragraph.</p>
+        </div>
+		<div id="other-content">
+			<p>This is ancillary content.</p>
+		</div>
+		<h3 style="margin:30px 0 0;font-family:Helvetica,sans-serif;">Type guide:</h3>
+		<ul>
+			<li style='font-family:"Garamond";'>Garamond</li>
+			<li style='font-family:Helvetica,Arial,sans-serif;'>Helvetica</li>
+			<li style='font-family:Georgia;'>Georgia</li>
+			<li style='font-family:"Courier New";'>Courier New</li>
+			<li style='font-family:"Times New Roman";'>Times New Roman</li>
+    </body>
+</html>
