@@ -1,0 +1,151 @@
+nav {
+	width: 80%;
+}
+
+nav li {
+	text-align: center;
+}
+
+nav li a {
+	float: none;
+}
+
+header {
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+}
+
+/* responsive design */
+@media screen and (max-width: 874px) {
+	/* Update global areas for smaller screens */
+	h1 {
+		background: none;
+	}
+
+	header {
+		background: none;
+		height: 0px;
+	}
+
+	#content,
+	#menu-food,
+	#google-maps {
+		width: 90%;
+		padding: 0px 5% 5%;
+	}
+
+	.wrapper {
+		width: 90%
+	}
+	nav {
+		margin: 20px auto 20px;
+	}
+
+	nav li a {
+		font-size: 12px;
+	}
+
+	#content h2 {
+		top: 10px;
+		padding-top: 225px;
+		margin-bottom: 20px;
+	}
+
+	#content img {
+		display: none;
+		float: none;
+	}
+
+	.user-text {
+		width: 100%;
+	}
+
+	.menu-bbq {
+		width: 60%;
+	}
+
+	#menu-food h3 {
+		margin: 0 auto 20px;
+	}
+
+	.menu h4 {
+		font-size: 24px;
+	}
+
+	.menu li {
+		font-size: 16px;
+		margin: 0px 0px 6px;
+	}
+
+	.menu .column {
+		width: 40%;
+		margin: 4%;
+	}
+
+	.menu-sides {
+		width: 35%;
+		margin-left: 4%;
+	}
+
+	#map_canvas {
+		display: none;
+		width: 0px;
+		height: 0px;
+	}
+
+	#google-maps {
+		margin-top: 0px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	/* all css goes here */
+	.menu-bbq,
+	.menu-sides,
+	.menu-bbq {
+		border-right: 0px;
+	}
+	
+	#google-maps {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	#address {
+		top: 0px;
+		width: 90%;
+		padding: 5px;
+		margin-right: 0px;
+		height: 230px;
+	}
+
+
+	#address h3 {
+		background: none;
+		height: auto;
+		width: auto;
+		margin: 10px 0px;
+	}
+
+	#address h3 span {
+		display: block;
+		font-family: 'Sniglet', sans-serif;
+		font-size: 24px;
+		color: #bc0505;
+		line-height: 34px;
+		text-align: center;
+	}
+
+	#address a{
+		width: 130px;
+		margin: 7px;
+	}
+
+	.user-text {
+		-moz-column-count: 1; /* Firefox */
+		-webkit-column-count: 1; /* Safari and Chrome */
+		-column-count: 1;
+	}
+}

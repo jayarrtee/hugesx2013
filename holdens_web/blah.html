@@ -1,0 +1,30 @@
+<button id="events_button">Click Me!</button>
+<button style="padding: 10px;" id="events_mouseover">Mouse is Out!</button>
+<select id="events_change">
+	<option value="ribs">Ribs</option>
+	<option value="brisket">Brisket</option>
+	<option value="ribs">Mac &amp; Cheese</option>
+</select>
+<script type="text/javascript">
+	var element = document.getElementById('events_button')
+
+	element.onclick = function () {
+		alert('Hello, World!')
+	};
+	// new section
+	var events_mouseover = document.getElementById('events_mouseover');
+	
+	events_mouseover.onmouseover = function () {
+		events_mouseover.innerHTML = 'Mouse is In!'
+	};
+	events_mouseover.onmouseout = function () {
+		events_mouseover.innerHTML = 'Mouse is Out!'
+	};
+	
+	var events_change = document.getElementById('events_change');
+
+	events_change.onchange = function (val) {
+		alert(events_change.options[events_change.selectedIndex].value);
+	};
+
+</script>

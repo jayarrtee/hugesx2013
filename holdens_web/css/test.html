@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+
+		<style type="text/css">
+		 div {
+		 	border: 1px solid;
+		 	padding: 10px;
+		 }
+		 /*.main-columns {
+		 	width: 300px;
+		 }*/
+		 .sub-column {
+		 	float: left;
+		 }
+		 div.sub-column {
+		 	background-color: orange;
+		 }
+		 #column1 {
+		 	background-color: blue;
+		 }
+		 #column2	 {
+		 	
+		 	background-color: green;
+		 }
+		 .sub-column:nth-child(2) {
+		 	
+		 }
+		</style>
+	</head>
+	<body>
+		<div id="column1" class=" column main-columns">column 1
+			<div class="column sub-column">sub column 1</div>
+			<span class="sub-column">span subcolumn</span>
+			<div class="column sub-column"> sub column 2</div>
+			<div class="giveheight" ></div>
+		</div>
+		<div id="column2" class="column main-columns">column 2
+			<div class="column sub-column">sub column 1</div>
+			<div class="column sub-column"> sub column 2</div>
+		</div>
+	</body>
+
+
+</html>
